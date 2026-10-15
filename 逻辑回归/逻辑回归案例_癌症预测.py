@@ -34,6 +34,6 @@ df_A = pd.DataFrame(cm_A,index=df_index,columns=df_label)
 print(df_A)
 
 # 模型A的精准率、召回率、F1值
-print(f"A模型的精准率：{precision_score(y_train, y_pre_A,pos_label="恶性")}")
-print(f"A模型的召回率：{recall_score(y_train, y_pre_A,pos_label="恶性")}")
-print(f"A模型的F1值：{f1_score(y_train, y_pre_A,pos_label="恶性")}")
+print(f"A模型的精准率：{precision_score(y_train, y_pre_A,pos_label='恶性')}")
+print(f"A模型的召回率：{recall_score(y_train, y_pre_A, pos_label='恶性')}")
+print(f"A模型的F1值：{f1_score(y_train, y_pre_A,pos_label='恶性')}")
